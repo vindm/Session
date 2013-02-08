@@ -10,7 +10,6 @@ body{
 	height:auto;
 	padding-top:10px}
 .full{
-	width:800px;
 	margin-bottom:10px;
 	margin-left:auto;
 	margin-right:auto;
@@ -68,13 +67,14 @@ body{
 		background: #222 url(../images/background-bulletin.gif) repeat-x 0% 0%;
 		border: 1px solid #6C6C6C;
 		display:none}
-		.prepod{
-			float:left;
-			width:102px;}
-			img{
-				border-right: 1px solid #6C6C6C;
-				padding:10px;
-				height:121px}
+        .prepod {
+            border-right: 1px solid #6C6C6C;
+            padding: 10px 0;
+            float: left;
+            width: 130px;
+            text-align: center;
+        }
+			img{height:121px}
 		.info{
 			width:673px;
 			float:right;
