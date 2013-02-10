@@ -58,7 +58,29 @@ function full (title, title_full, prepod, cons, exam, bilet, conspect, crack)
 	},
 	this.get=function()
 	{
-		return '<div class="full"><div class="header"><div class="title"><h3>'+title+'</h3></div><div class="ost"><div class="ost_cons">'+this.ost_cons()+'</div><div class="ost_exam">'+this.ost_exam()+'</div></div></div><div class="content">'+this.prepod.get()+'<div class="info"><h4><p class="title_full">'+this.title_full+'</p></h4>'+this.cons.get()+this.exam.get()+'</div></div><div class="down2"><a href="'+this.bilet+'"><div class="bilet"><p>Билеты</p></div></a><a href="'+this.conspect+'"><div class="conspect"><p>Конспект</p></div></a><a href="'+this.crack+'"><div class="crack"><p>Готовые билеты</p></div></a></div><div class="console"><p>Материал не добавлен. Вы сделаете доброе дело, если поможете его найти.</p><span>Введите ссылку на материал</span><input type="text" class="inp"/><div class="send">отправить</div><br></div>'
+		return '' +
+        '<div class="full">' +
+            '<div class="header">' +
+                '<div class="title"><h3>'+title+'</h3></div>' +
+                '<div class="ost"><div class="ost_cons">'+this.ost_cons()+'</div>' +
+                '<div class="ost_exam">'+this.ost_exam()+'</div>' +
+            '</div>' +
+        '</div>' +
+        '<div class="content">'+this.prepod.get()+
+            '<div class="info">' +
+                '<h4><p class="title_full">'+this.title_full+'</p></h4>'
+                +this.cons.get()+this.exam.get()+'' +
+            '</div>' +
+        '</div>' +
+        '<div class="down2">' +
+            '<a href="'+this.bilet+'"><div class="bilet"><p>Билеты</p></div></a>' +
+            '<a href="'+this.conspect+'"><div class="conspect"><p>Конспект</p></div></a>' +
+            '<a href="'+this.crack+'"><div class="crack"><p>Готовые билеты</p></div></a>' +
+        '</div>' +
+        '<div class="console"><p>Материал не добавлен. Вы сделаете доброе дело, если поможете его найти.</p><span>Введите ссылку на материал</span>' +
+            '<input type="text" class="inp"/>' +
+            '<div class="send">отправить</div><br>' +
+        '</div>'
 	}
 }
 function prepod (photo, name)
